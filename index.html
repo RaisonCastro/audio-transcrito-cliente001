@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Áudio + Legenda</title>
 
-  <!-- Video.js CSS -->
   <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
 
   <style>
@@ -21,7 +20,7 @@
 
     .player-container {
       width: 100%;
-      max-width: 900px;            /* aumenta para PC */
+      max-width: 900px;
       background: white;
       padding: 20px;
       border-radius: 14px;
@@ -29,13 +28,8 @@
     }
 
     audio.video-js {
-      width: 100% !important;      /* ocupa toda a largura */
-      height: 110px !important;    /* AUMENTA a altura do player */
-    }
-
-    /* Aumenta a área visual do player Video.js */
-    .vjs-tech {
-      height: 100px !important;
+      width: 100% !important;
+      height: auto !important;
     }
   </style>
 </head>
@@ -47,7 +41,7 @@
     class="video-js vjs-default-skin"
     controls
     preload="auto"
-    data-setup='{}'
+    data-setup="{}"
   >
     <source src="WhatsApp Audio 2025-11-17 at 15.12.29.ogg" type="audio/ogg" />
 
@@ -61,7 +55,6 @@
   </audio>
 </div>
 
-<!-- Video.js script -->
 <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
 
 <script>
